@@ -1,0 +1,50 @@
+const catalogProducts = [
+  {
+    id: "borneo-gift-box",
+    name: "JC Borneo House Gift Box",
+    category: "gifts",
+    categoryLabel: "Gifts & good things",
+    description: "A beautifully presented Borneo House gift box, with Super coffee sachets and chocolate, ready to gift.",
+    shortDescription: "A little luxury for someone special.",
+    price: 250,
+    image: "assets/gift-box-photo.png",
+    badge: "READY TO GIFT",
+  },
+  {
+    id: "super-kopi",
+    name: "SUPER Power – Tongkat Ali, Ginseng & Misai Kucing",
+    category: "coffee",
+    categoryLabel: "Instant coffee",
+    description: "More Than a Morning Pick-Me-Up—A Smooth, Herbal-Infused Coffee Crafted for Daily Vitality.\n\nUpgrade your daily coffee routine with SUPER Power Kopi 6-dalam-1, a rich, aromatic Southeast Asian premix blending bold Robusta and freeze-dried instant coffee with Tongkat Ali, Panax Ginseng and Misai Kucing (Cat's Whiskers). Balanced with creamy non-dairy creamer and just the right touch of sweetness, each single-serve stick delivers a full-bodied cup for busy mornings, long shifts or afternoon slumps.\n\nWhy You’ll Love It:\n• 6-in-1 botanical blend with Tongkat Ali root extract, Panax Ginseng root extract and Misai Kucing leaf extract\n• Rich, smooth kopitiam-style flavour without a harsh herbal aftertaste\n• 20 individual sticks for easy grab-and-go convenience\n• Halal-certified and manufactured in Malaysia\n\nHow to Prepare:\nHot: Empty 1 stick into a mug, add 200ml hot water (approximately 80°C), stir well and enjoy.\nIced: Empty 1 stick into a cup, dissolve in 80ml hot water (approximately 80°C), stir well, add ice and serve chilled.\n\nProduct Specifications:\nBrand: SUPER (SUPER Everyday Malaysia)\nVariant: Kopi Tongkat Ali, Ginseng dan Misai Kucing (6-in-1 Functional Premix Coffee)\nKey Botanicals: Tongkat Ali Root Extract, Panax Ginseng Root Extract, Misai Kucing Leaf Extract\nPack Size: 20 sticks\nAllergen: Contains milk protein (sodium caseinate in non-dairy creamer)",
+    shortDescription: "Tongkat Ali, Ginseng & Misai Kucing 6-in-1 · 20 sticks",
+    price: 125,
+    originalPrice: 130,
+    image: "assets/super-kopi-photo.jpeg",
+    badge: "SALE",
+  },
+  {
+    id: "yit-foh-coffee",
+    name: "Yit Foh Tenom Café Latte 3-in-1",
+    category: "coffee",
+    categoryLabel: "Tenom coffee",
+    description: "Experience Sabah's Iconic Wood-Fired Coffee—Velvety, Bold and Ready in Minutes.\n\nCrafted by Yit Foh Coffee Factory—Sabah's oldest coffee roaster, founded in 1960 in Tenom—this Café Latte 3-in-1 brings authentic Malaysian kopitiam character to every cup. Each 35g sachet contains an infusion coffee bag filled with pure Tenom Robusta beans roasted over traditional rubber-tree wood fires, paired with smooth creamer and balanced sweetness.\n\nWhy You’ll Love It:\n• Authentic wood-fired aroma from small-drum rubberwood roasting since 1960\n• Real brewed coffee bag for full-bodied Robusta flavour\n• Creamy 3-in-1 coffee, creamer and sugar convenience\n• Halal-certified by JAKIM Malaysia\n\nHow to Brew:\nPlace 1 sachet into your cup and pour in 200ml boiling water.\nSteep for 2–5 minutes, stirring occasionally; steep longer for a stronger cup.\nGently squeeze the bag with a spoon, lift it out, and enjoy hot or pour over ice.\n\nProduct Specifications:\nBrand: Yit Foh Tenom Coffee (Est. 1960)\nOrigin: Tenom, Sabah, Malaysia\nVariant: Café Latte 3-in-1\nPack Size: 10 sachets × 35g (350g net weight)\nDietary: Halal-certified",
+    shortDescription: "Creamy wood-fired café latte · 10 sachets × 35g",
+    price: 65,
+    image: "assets/tenom-coffee-photo.jpeg",
+    badge: "A TASTE OF TENOM",
+  },
+  {
+    id: "kopi-o",
+    name: "Yit Foh Tenom Kopi O Kosong",
+    category: "coffee",
+    categoryLabel: "Traditional black coffee",
+    description: "Pure, Unsweetened Tenom Black Coffee—Slow-Roasted Over Wood Fires Since 1960.\n\nFor coffee purists who love bold, traditional kopitiam black coffee with zero sugar or creamer, Yit Foh Kopi O Kosong delivers Sabah's iconic brew in its purest form. Founded in 1960 in Tenom, Yit Foh Coffee Factory hand-roasts select Robusta beans over traditional rubber-tree wood fires for a deep, smoky aroma and rich, full-bodied cup.\n\nWhy You’ll Love It:\n• 100% pure coffee—no sugar, milk or creamer\n• Authentic rubberwood-fired Tenom roast\n• Convenient infusion bag—no machine or filter sock needed\n• Halal-certified by JAKIM Malaysia\n\nHow to Brew:\nPlace 1 sachet into your cup.\nPour in 200ml boiling water.\nSteep for 2–3 minutes, stirring occasionally to release the aroma.\nLift out the bag and enjoy black (Kosong), add condensed milk for classic Kopi, or pour over ice.\n\nProduct Specifications:\nBrand: Yit Foh Tenom Coffee (Est. 1960)\nVariant: Kopi O Kosong (Black Coffee, Unsweetened)\nOrigin: Tenom, Sabah, Malaysia\nPack Size: 12 sachets × 10g (120g net weight)\nDietary: 100% Coffee Only | No Added Sugar | Halal-certified",
+    shortDescription: "Unsweetened black coffee · 12 sachets × 10g",
+    price: 65,
+    image: "assets/kopi-o-photo.jpeg",
+    badge: "KOPI O",
+  },
+];
+
+if (typeof module !== "undefined" && module.exports) module.exports = catalogProducts;
+if (typeof window !== "undefined") window.JC_BORNEO_PRODUCTS = catalogProducts;
