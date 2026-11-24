@@ -7,7 +7,7 @@ const catalogProducts = [
     description: "A beautifully presented Borneo House gift box, with Super coffee sachets and chocolate, ready to gift.",
     shortDescription: "A little luxury for someone special.",
     price: 250,
-    image: "assets/gift-box-photo.png",
+    image: "assets/Gitbox.jpeg",
     badge: "READY TO GIFT",
   },
   {
