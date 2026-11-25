@@ -121,8 +121,8 @@ function updateCart() {
     drawerFooter.querySelector(".cart-total").textContent = money.format(subtotal + shipping);
     const remaining = Math.max(0, 80 - subtotal);
     const shippingNote = remaining
-      ? `You're ${money.format(remaining)} away from free shipping.`
-      : "Lovely! Your order qualifies for free shipping.";
+      ? `You're ${money.format(remaining)} away from free Registered Post delivery.`
+      : "Lovely! Your order qualifies for free Registered Post delivery.";
     drawerFooter.querySelector(".shipping-note").innerHTML = `${shippingNote}<div class="shipping-progress" aria-label="${remaining ? "Progress towards" : "Reached"} free shipping"><span style="width:${Math.min(100, subtotal / 80 * 100)}%"></span></div>`;
   }
 }
@@ -192,7 +192,7 @@ function openProductDetails(id) {
       <p class="product-category">${product.categoryLabel}</p>
       <h2>${product.name}</h2>
       <p class="dialog-price">${product.originalPrice ? `<del>${money.format(product.originalPrice)}</del> ` : ""}${money.format(product.price)}</p>
-      <div class="dialog-description">${description}</div>
+      <div class="dialog-description">${description}<section class="dialog-section"><h3>Delivery</h3><ul><li>Sent from Melbourne by Australia Post Registered Post, with tracking and signature on delivery.</li><li>We email you the tracking number once your order is posted.</li><li>A$10 for orders under A$80, free for orders of A$80 or more. Australian addresses only.</li></ul></section></div>
       <button class="button button-gold" type="button" data-action="add" data-id="${product.id}">Add to bag <span aria-hidden="true">+</span></button>
     </div>
   `;

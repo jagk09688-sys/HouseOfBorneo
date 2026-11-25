@@ -173,6 +173,11 @@ h1, h2, h3, p { margin-top: 0; }
 .total-row { margin-top: 4px; padding-top: 10px; border-top: 1px solid var(--line); font-weight: 600; }
 .total-row strong { font-size: 16px; }
 .drawer-footer > p { margin: 11px 0 15px; color: #847c70; font-size: 9px; line-height: 1.55; }
+.delivery-info { margin: 13px 0 15px; padding: 12px 14px; background: #f0ece3; color: #6f675b; font-size: 10px; line-height: 1.55; }
+.delivery-info h3 { margin: 0 0 6px; font-family: var(--serif); font-size: 14px; font-weight: 600; color: var(--ink); }
+.delivery-info ol { margin: 0; padding-left: 17px; }
+.delivery-info li { margin: 4px 0; }
+.delivery-info p { margin: 8px 0 0; color: #847c70; font-size: 9px; }
 .checkout-button { width: 100%; background: var(--brown); color: white; }
 .checkout-button:hover { background: #483317; }
 .continue-link { display: block; margin: 12px auto 0; padding: 5px; border: 0; background: transparent; color: #756a57; font-size: 10px; text-decoration: underline; cursor: pointer; }

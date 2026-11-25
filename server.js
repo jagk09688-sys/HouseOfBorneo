@@ -244,7 +244,7 @@ function orderEmailHtml(order, customerEmail) {
     ${customerEmail ? `<p>Customer email: <a href="mailto:${escapeHtml(customerEmail)}">${escapeHtml(customerEmail)}</a></p>` : ""}
     <h3>Delivery address</h3><p>${addressLines}</p>
     <table style="width:100%;border-collapse:collapse">${rows}
-      <tr><td style="padding:8px 0;border-top:1px solid #ddd">Shipping</td><td style="padding:8px 0;border-top:1px solid #ddd;text-align:right">${order.shippingCents ? formatMoney(order.shippingCents) : "Free"}</td></tr>
+      <tr><td style="padding:8px 0;border-top:1px solid #ddd">Registered Post</td><td style="padding:8px 0;border-top:1px solid #ddd;text-align:right">${order.shippingCents ? formatMoney(order.shippingCents) : "Free"}</td></tr>
       <tr><td style="padding:10px 0;border-top:1px solid #ddd"><strong>Total paid</strong></td><td style="padding:10px 0;border-top:1px solid #ddd;text-align:right"><strong>${formatMoney(order.totalCents)} AUD</strong></td></tr>
     </table>
     <p>Payment provider: ${escapeHtml(order.provider)}<br>Order reference: ${escapeHtml(order.id)}</p>
@@ -504,7 +504,7 @@ app.post("/api/checkout/bank", validateOrigin, async (req, res) => {
       <p>Payment is pending confirmation.</p>
       <p><strong>BSB:</strong> 083004<br><strong>Account:</strong> 472998542<br><strong>Reference:</strong> ${escapeHtml(reference)}<br><strong>Total:</strong> ${formatMoney(order.total_cents)} AUD</p>
       <table style="width:100%;border-collapse:collapse">${rows}
-        <tr><td style="padding:8px 0;border-top:1px solid #ddd">Shipping</td><td style="padding:8px 0;border-top:1px solid #ddd;text-align:right">${order.shipping_cents ? formatMoney(order.shipping_cents) : "Free"}</td></tr>
+        <tr><td style="padding:8px 0;border-top:1px solid #ddd">Registered Post</td><td style="padding:8px 0;border-top:1px solid #ddd;text-align:right">${order.shipping_cents ? formatMoney(order.shipping_cents) : "Free"}</td></tr>
         <tr><td style="padding:10px 0;border-top:1px solid #ddd"><strong>Total</strong></td><td style="padding:10px 0;border-top:1px solid #ddd;text-align:right"><strong>${formatMoney(order.total_cents)} AUD</strong></td></tr>
       </table>
       <p>Customer: <a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></p>
@@ -564,7 +564,7 @@ app.post("/api/checkout/card", validateOrigin, async (req, res) => {
         price_data: {
           currency: "aud",
           unit_amount: order.shipping_cents,
-          product_data: { name: "Shipping (orders under A$80)" },
+          product_data: { name: "Registered Post delivery (orders under A$80)" },
         },
       });
     }
